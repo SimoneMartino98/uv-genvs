@@ -19,6 +19,17 @@ cd uv-genvs
 uv tool install .
 ```
 
+If you want `vs-code` or `zed` editors to automatically detect the environments add this on your `.bashrc`/`.zshrc`:
+```bash
+if [ -d "$HOME/.uv-genvs" ]; then
+    for env_bin in "$HOME/.uv-genvs"/*/bin; do
+        [ -d "$env_bin" ] && PATH="$env_bin:$PATH"
+    done
+fi
+export PATH
+```
+You may need to reboot the editor before you can see the new environment created.
+
 ## Uninstallation
 
 Remove `uv-genvs` from your system with:

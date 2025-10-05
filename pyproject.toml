@@ -1,6 +1,6 @@
 [project]
 name = "uv-genvs"
-version = "0.1.1"
+version = "0.1.2"
 description = "Some useful bash command for uv and for managing virtual environments."
 authors = [{ name = "Simone Martino" }]
 requires-python = ">=3.8"
