@@ -1,0 +1,9 @@
+[project]
+name = "uv-genvs"
+version = "0.1.0"
+description = "Some useful bash command for uv and for managing virtual environments."
+authors = [{ name = "Simone Martino" }]
+requires-python = ">=3.8"
+
+[project.scripts]
+genvs = "uv_genvs.main:main"
